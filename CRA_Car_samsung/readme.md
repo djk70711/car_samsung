@@ -1,6 +1,6 @@
 ### CRA_CAR_SAMSUNG
 
-D1 :  
+D1 : O  
 D2 :  
 D3 :  
 D4 :  
