@@ -1,14 +1,13 @@
-﻿#pragma once
+#pragma once
 
-#ifndef CLEAR_SCREEN
 #define CLEAR_SCREEN "\033[H\033[2J"
-#endif
 
-enum QuestionType
+enum QuesionType
 {
-    CarType_Q,
+    First_Q,
+    CarType_Q = First_Q,
     Engine_Q,
-    brakeSystem_Q,
+    BrakeSystem_Q,
     SteeringSystem_Q,
     Run_Test,
 };
@@ -20,29 +19,30 @@ enum CarType
     TRUCK
 };
 
-enum Engine
+enum EngineName
 {
     GM = 1,
     TOYOTA,
-    WIA
+    WIA,
+    BROKEN
 };
 
-enum brakeSystem
+enum BrakeSystemName
 {
     MANDO = 1,
     CONTINENTAL,
     BOSCH_B
 };
 
-enum SteeringSystem
+enum SteeringSystemName
 {
     BOSCH_S = 1,
     MOBIS
 };
 
-enum LoopProcess
+enum ReturnFlag
 {
-    NO_WORK = 0,
+    NORMAL,
+    BREAK,
     CONTINUE,
-    BREAK
 };
